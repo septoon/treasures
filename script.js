@@ -48,13 +48,13 @@ $("#map").click((event) => {
     // Записываем в элемент #distance новую подсказку
     $("#distance").text(distanceHit);
     // Создаем переменную с подсказкой, сколько кликов осталось
-    let willBe = 13 - clicks;
+    let willBe = 25 - clicks;
     // Записываем в элемент #willBe сколько осталось хордов
     $("#willBe").text("У вас осталось " + willBe + " ходов!");
     // Если клик был достаточно близко, поздравляем с победой
     if (distance < 5) {
         alert("Поздравляем с победой! Вам понадобилось " + clicks + " кликов!");
-    } if (clicks > 12) {
+    } if (clicks > 24) {
         alert("Вы проиграли!");
         window.location.reload(); 
     }
